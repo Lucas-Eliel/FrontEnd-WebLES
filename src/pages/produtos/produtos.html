@@ -1,0 +1,111 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Produto</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+        <ion-card *ngFor="let produto of produtos">
+            <ion-list>
+                <ion-item >
+                    <ion-avatar item-start>
+                    <img id="logoProduto" src="{{produto.logo}}"/>
+                    </ion-avatar>
+                    <h2><b>{{produto.nome}}</b></h2>
+                    <h3><b>Modelo: </b>{{produto.modelo}}</h3>
+                    <h3><b>Versão: </b>{{produto.versao}}</h3>
+                    <h3><b>Registro: </b>{{produto.idProduto}}</h3>
+                </ion-item>
+            </ion-list> 
+        
+
+    <ion-card *ngFor="let item of items">
+        <ion-item color="dark">
+            <ion-icon name="key" item-left large ></ion-icon>
+            LICENÇAS                          
+        </ion-item>
+
+        <ion-grid>
+            <ion-row>            
+                <ion-col col-12 col-sm-9 col-md-6 col-lg-4 col-xl-3>
+                    <ion-item>
+                        <ion-label>Serial: <b style="color:black">{{item.licenca}}</b></ion-label>
+                    </ion-item>                          
+                </ion-col>  
+        
+                <ion-col col-12 col-sm-9 col-md-6 col-lg-4 col-xl-3>
+                    <ion-item>
+                        <ion-label>Usuário: <b style="color:black">{{item.usuario}}</b></ion-label>
+                    </ion-item>                          
+                </ion-col>  
+        
+                <ion-col col-12 col-sm-9 col-md-6 col-lg-4 col-xl-3>
+                    <ion-item>
+                        <ion-label>Token: <b style="color:red">{{item.token}}</b></ion-label>
+                    </ion-item>                     
+                </ion-col>
+     
+            </ion-row>
+        </ion-grid>
+    </ion-card>
+
+
+
+
+    <ion-card *ngFor="let integrate of integrates">
+        <ion-item color="dark">
+            <ion-icon name="cloud-circle" item-left large ></ion-icon>
+            INTEGRATE API                        
+        </ion-item>
+
+        <ion-grid>
+            <ion-row>
+                <ion-col col-12 col-sm-9 col-md-6 col-lg-4 col-xl-3>
+                    <ion-item>
+                        <ion-label>Nome da Base: <b style="color:black">{{integrate.nomeBase}}</b></ion-label>
+                        <ion-input type="text" [(ngModel)]="nomeBase"></ion-input>
+                    </ion-item>
+                </ion-col>                   
+
+
+                <ion-col col-12 col-sm-9 col-md-6 col-lg-4 col-xl-3>
+                    <ion-item>
+                        <ion-label>IP: <b style="color:black">{{integrate.ip}}</b></ion-label>
+                        <ion-input type="text" [(ngModel)]="ip"></ion-input>
+                    </ion-item>
+                </ion-col>                  
+
+                <ion-col col-12 col-sm-9 col-md-6 col-lg-4 col-xl-3>
+                    <ion-item>
+                       <ion-label>Porta: <b style="color:black">{{integrate.porta}}</b></ion-label>
+                        <ion-input type="text" [(ngModel)]="porta"></ion-input>
+                    </ion-item>
+                </ion-col>                  
+
+
+                <ion-col col-12 col-sm-9 col-md-6 col-lg-4 col-xl-3>
+                    <ion-item>
+                       <ion-label>Usuário do Banco: <b style="color:black">{{integrate.usuarioBanco}}</b></ion-label>
+                        <ion-input type="text" [(ngModel)]="usuarioBanco"></ion-input>
+                    </ion-item>
+                </ion-col>                  
+
+                <ion-col col-12 col-sm-9 col-md-6 col-lg-4 col-xl-3>
+                    <ion-item>
+                       <ion-label>Senha do Banco: <b type="password" style="color:black">{{integrate.senhaBanco}}</b></ion-label>
+                        <ion-input type="password" [(ngModel)]="senhaBanco"></ion-input>
+                    </ion-item>
+                </ion-col>                  
+            </ion-row>
+        </ion-grid>
+        <button ion-button block icon-left color="primary" (click)="gravarIntegrate(produto.idProduto)">Gravar</button>
+        </ion-card>
+    </ion-card>
+
+   
+</ion-content>

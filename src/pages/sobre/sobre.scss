@@ -1,0 +1,54 @@
+page-sobre {
+    
+    .toolbar-background {
+        background-color: white;
+    }
+
+    /*ion-header {
+        height: 70px;
+    }*/
+
+    #imgLogo{
+        padding-left: 40px;
+        width:250px;
+        height:70px;
+    }
+
+    #btnMenu{
+        position:fixed;
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+
+    #btnEntrar{
+        float: right;
+        width:120px;
+        height:50px;
+        zoom:1.2;
+    }
+
+    #imagensComercial{
+        width:400px;
+        height:300px;
+    }
+
+    #imagensIcones{
+        width:80px;
+        height:80px;
+    }
+
+    #texto{
+        white-space: normal; 
+        display: block;
+    }
+
+    #imgPop{
+        width:60px;
+        height:65px;
+        margin-top: 3px;
+        margin-right: 20px;
+        float: right;
+    }
+
+
+}

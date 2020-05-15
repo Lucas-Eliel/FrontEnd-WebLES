@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title >Seja muito Bem vindo</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding >
+              
+
+<ion-grid>
+    <ion-row>
+        
+        <ion-col col-12 col-sm-9 col-md-6 col-lg-3 col-xl-3>
+
+        <ion-card>
+
+        <ion-item color="dark">
+            <ion-icon name="apps" item-left large ></ion-icon>
+            LOGIN                                    
+        </ion-item>
+        <ion-item></ion-item>
+        <ion-item>
+            <ion-label>Usuário:</ion-label>
+            <ion-input type="text" [(ngModel)]="usuario"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label>Senha:</ion-label>
+            <ion-input type="password" [(ngModel)]="senha"></ion-input>
+        </ion-item>
+        <ion-item>
+            <button ion-button block icon-left color="primary" (click)="analisaAcesso()"><ion-icon name="arrow-round-forward"></ion-icon>Entrar</button>
+        </ion-item>
+        <ion-item></ion-item>
+        <ion-item color="dark">
+        </ion-item>
+
+    </ion-card>
+    </ion-col>
+        
+
+</ion-row>
+</ion-grid>
+
+</ion-content>

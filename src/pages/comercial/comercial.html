@@ -1,0 +1,100 @@
+<ion-header color="primary">
+    <ion-navbar>
+        <button id="btnMenu" ion-button menuToggle><ion-icon name="menu"></ion-icon></button>
+        <img id="imgLogo" src="assets/imgs/les.png"/>
+        <img id="imgPop" src="assets/imgs/iconEntrar.png" (click) ="goToEntrar()"/>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding >
+
+    <ion-card>
+        <ion-list>
+            <ion-item>
+                <ion-avatar item-start>
+                <img id="logoProduto" src="assets/imgs/lespdv.png"/>
+                </ion-avatar>
+                <h2>LESPDV</h2>
+                <h3>Ponto de Venda Versão Mobile para facilitar seus trabalhos</h3>
+            </ion-item>
+
+
+
+            <ion-grid>
+                <ion-row>
+                    <ion-col col-12 col-sm-9 col-md-6 col-lg-3 col-xl-3>
+                        <ion-card>
+                            <ion-item color="dark">
+                                <ion-icon name="pricetags" item-left large ></ion-icon>
+                                LESPDV 1                                    
+                            </ion-item>
+                            <ion-item>
+                                <ion-label>Nº de Licenças: 1</ion-label>
+                                <ion-input type="text" [(ngModel)]="usuario"></ion-input>
+                            </ion-item>
+                            <ion-item>
+                                <ion-label>Valor/Licença: 35,00 mês</ion-label>
+                                <ion-input type="password" [(ngModel)]="senha"></ion-input>
+                            </ion-item>
+                        </ion-card>
+                    </ion-col>
+                        
+                    <ion-col col-12 col-sm-9 col-md-6 col-lg-3 col-xl-3>
+                        <ion-card>
+                            <ion-item color="dark">
+                                <ion-icon name="pricetags" item-left large ></ion-icon>
+                                LESPDV 2                                    
+                            </ion-item>
+                            <ion-item>
+                                <ion-label>Nº de Licenças: 2</ion-label>
+                                <ion-input type="text" [(ngModel)]="usuario"></ion-input>
+                            </ion-item>
+                            <ion-item>
+                                <ion-label>Valor/Licença: 30,00 mês</ion-label>
+                                <ion-input type="password" [(ngModel)]="senha"></ion-input>
+                            </ion-item>
+                        </ion-card>
+                    </ion-col>
+
+                    <ion-col col-12 col-sm-9 col-md-6 col-lg-3 col-xl-3>
+                        <ion-card>
+                            <ion-item color="dark">
+                                <ion-icon name="pricetags" item-left large ></ion-icon>
+                                LESPDV 3                                    
+                            </ion-item>
+                            <ion-item>
+                                <ion-label>Nº de Licenças: 3</ion-label>
+                                <ion-input type="text" [(ngModel)]="usuario"></ion-input>
+                            </ion-item>
+                            <ion-item>
+                                <ion-label>Valor/Licença: 25,00 mês</ion-label>
+                                <ion-input type="password" [(ngModel)]="senha"></ion-input>
+                            </ion-item>
+                        </ion-card>
+                    </ion-col>
+
+
+                    <ion-col col-12 col-sm-9 col-md-6 col-lg-3 col-xl-3>
+                        <ion-card>
+                            <ion-item color="dark">
+                                <ion-icon name="pricetags" item-left large ></ion-icon>
+                                LESPDV 4                                    
+                            </ion-item>
+                            <ion-item>
+                                <ion-label>Nª de Licenças: 4 ou mais</ion-label>
+                                <ion-input type="text" [(ngModel)]="usuario"></ion-input>
+                            </ion-item>
+                            <ion-item>
+                                <ion-label>Valor/Licença: 20,00 mês</ion-label>
+                                <ion-input type="password" [(ngModel)]="senha"></ion-input>
+                            </ion-item>
+                        </ion-card>
+                    </ion-col>
+
+                </ion-row>
+            </ion-grid>
+
+        </ion-list>
+    </ion-card>
+
+</ion-content>

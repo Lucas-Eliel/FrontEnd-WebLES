@@ -1,0 +1,27 @@
+<ion-menu [content]="content">
+  <ion-header>
+    <ion-toolbar color="ligth">
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+
+    <ion-item>
+        <button ion-button block icon-left color="primary" (click)="goToSobre()"><ion-icon name="grid"></ion-icon>Sobre</button>
+    </ion-item>
+
+    <ion-item>
+        <button ion-button block icon-left color="primary" (click)="goToComercial()"><ion-icon name="grid"></ion-icon>Comercial</button>
+    </ion-item>
+
+    <ion-item>
+        <button ion-button block icon-left color="primary" (click)="goToContato()"><ion-icon name="grid"></ion-icon>Contato</button>
+    </ion-item>
+
+  </ion-content>
+
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

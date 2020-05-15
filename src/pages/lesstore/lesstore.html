@@ -1,0 +1,41 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Produto</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+    <ion-card *ngFor="let item of items">
+        <ion-item color="dark">
+            <ion-icon name="basket" item-left large ></ion-icon>
+            LES STORE                         
+        </ion-item>
+
+        <ion-list>
+            <ion-item>
+                <ion-avatar item-start>
+                <img id="logoProduto" src="{{item.logo}}"/>
+                </ion-avatar>
+                <h2><b>{{item.nome}}</b></h2>
+                <h3><b>Modelo: </b>{{item.modelo}}</h3>
+                <h3><b>Versão: </b>{{item.versao}}</h3>
+                <h3><b>Registro: </b>{{item.idProduto}}</h3>
+            </ion-item>
+        </ion-list>
+
+        <ion-grid> 
+            <ion-row>
+                <ion-col col-12 col-sm-9 col-md-6 col-lg-4 col-xl-3>
+                    <a href="{{item.download}}" target="_blank"><button ion-button block round icon-left color="primary" >Download</button></a> 
+               </ion-col>                           
+            </ion-row>
+        </ion-grid>   
+    </ion-card>
+
+    
+</ion-content>

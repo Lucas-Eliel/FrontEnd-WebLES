@@ -1,0 +1,79 @@
+page-home {
+    
+    .toolbar-background {
+        background-color: white;
+    }
+
+   /* ion-header {
+        height: 70px;
+    }*/
+
+    #imgLogo{
+        padding-left: 40px;
+        width:250px;
+        height:70px;
+    }
+
+    #btnMenu{
+        position:fixed;
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+
+    #btnEntrar{
+        margin-top: 15px;
+        float: right;
+    }
+
+    /*#btnStore{
+        float: right;
+        width:120px;
+        height:50px;
+        zoom:1.2;
+    }*/
+
+    #imagensComercial{
+        margin-top: 30px;
+        width:30%;
+        height:30%;
+    }
+
+    /*#imagensIcones{
+
+    }*/
+
+    #bannerTop{
+        margin-top: -2%;
+        margin-right: -2%;
+        margin-left: -2%;
+    }
+
+    #banner{
+        margin-top: 3%;
+        margin-block-end: 2%;
+        margin-right: -2%;
+        margin-left: -2%;
+    }
+
+    #banner3{
+        margin-top: 3%;
+        margin-right: -2%;
+        margin-left: -2%;
+    }
+
+    #bannerFooter{
+        margin-top: 0%;
+        margin-right: -2%;
+        margin-left: -2%;
+    }
+
+    #imgPop{
+        width:60px;
+        height:65px;
+        margin-top: 3px;
+        margin-right: 20px;
+        float: right;
+    }
+
+
+}

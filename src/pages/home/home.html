@@ -1,0 +1,53 @@
+<ion-header color="primary">
+    <ion-navbar>
+        <button id="btnMenu" ion-button menuToggle><ion-icon name="menu"></ion-icon></button>
+        <img id="imgLogo" src="assets/imgs/les.png"/>
+        <img id="imgPop" src="assets/imgs/iconEntrar.png" (click) ="goToEntrar()"/>
+   </ion-navbar>
+</ion-header>
+
+<ion-content padding >
+
+    <div id="bannerTop"><img src="assets/imgs/banner.png"/></div>
+
+    <div id="banner3"><img src="assets/imgs/banner3.png"/></div>
+
+    <ion-card>
+        <ion-slides paginationClickable=true
+                    initialSlide=0
+                    loop=true
+                    autoplay=1000
+                    speed=3000
+                    #mySlider
+                    align ="center">
+    
+            <ion-slide *ngFor="let item of produtos">
+                <div id="banner" align="center"><img id="imagensComercial" src="{{item.img}}"/></div>
+            </ion-slide>
+        </ion-slides>
+    </ion-card>
+
+
+    <div id="banner3"><img src="assets/imgs/banner4.png"/></div>
+
+    <ion-card>
+        <ion-slides paginationClickable=true
+                    initialSlide=0
+                    loop=true
+                    autoplay=1000
+                    speed=3000
+                    #mySlider
+                    align ="center">
+
+            <ion-slide *ngFor="let item of clientes">
+                <div id="banner" align="center" style="vertical-align: middle"><img id="imagensComercial" src="{{item.img}}"/></div>
+            </ion-slide>
+        </ion-slides>
+    </ion-card>
+
+
+
+    <div id="bannerFooter"><img src="assets/imgs/banner2.png"/></div>
+
+
+</ion-content>

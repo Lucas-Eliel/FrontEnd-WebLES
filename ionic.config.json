@@ -1,0 +1,7 @@
+{
+  "name": "SiteLES",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

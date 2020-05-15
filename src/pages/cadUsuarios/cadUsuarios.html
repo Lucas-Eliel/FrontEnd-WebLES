@@ -1,0 +1,231 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title >Seja um participante da LES</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding >
+      
+
+    <ion-card>
+
+        <ion-item color="dark">
+            <ion-icon name="people" item-left large ></ion-icon>
+            Cadastro de Usuário                           
+        </ion-item>
+
+        <ion-grid>
+            <ion-row>
+                <ion-col col-12 col-sm-9 col-md-6 col-lg-4 col-xl-3>
+                    <ion-list>
+                        <ion-item>
+                            <ion-label floating>Imagem</ion-label>
+                            <ion-input type="text"></ion-input>
+                        </ion-item>
+                    </ion-list>
+                </ion-col>                
+
+                <ion-col col-12 col-sm-9 col-md-6 col-lg-4 col-xl-3>
+                    <ion-list>
+                        <ion-item>
+                            <ion-label floating>Nome</ion-label>
+                            <ion-input type="text"></ion-input>
+                        </ion-item>                          
+                    </ion-list>
+                </ion-col>
+
+                <ion-col col-12 col-sm-9 col-md-6 col-lg-4 col-xl-3>
+                    <ion-list>
+                        <ion-item>
+                            <ion-label floating>CPF/CNPJ</ion-label>
+                            <ion-input type="text"></ion-input>
+                        </ion-item>                          
+                    </ion-list>
+                </ion-col>              
+
+                <ion-col col-12 col-sm-9 col-md-6 col-lg-4 col-xl-3>
+                    <ion-list>
+                        <ion-item>
+                            <ion-label>Sexo</ion-label>
+                            <ion-select [(ngModel)]="Sexo">
+                            <ion-option value="Masculino">Masculino</ion-option>
+                            <ion-option value="Feminino">Feminino</ion-option>
+                            <ion-option value="Empresarial">Empresarial</ion-option>
+                            </ion-select>
+                        </ion-item>
+                    </ion-list>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+
+
+        <ion-grid>
+            <ion-row>
+                <ion-col col-12 col-sm-9 col-md-6 col-lg-4 col-xl-3>
+                    <ion-list>
+                        <ion-item>
+                            <ion-label floating>Bairro</ion-label>
+                            <ion-input type="text"></ion-input>
+                        </ion-item>                            
+                    </ion-list>
+                </ion-col>
+
+                <ion-col col-12 col-sm-9 col-md-6 col-lg-4 col-xl-3>
+                    <ion-list>
+                        <ion-item>
+                            <ion-label floating>Rua</ion-label>
+                            <ion-input type="text"></ion-input>
+                        </ion-item>                            
+                    </ion-list>
+                </ion-col>  
+                
+                <ion-col col-12 col-sm-9 col-md-6 col-lg-4 col-xl-3>
+                    <ion-list>
+                        <ion-item>
+                            <ion-label floating>Número</ion-label>
+                            <ion-input type="text"></ion-input>
+                        </ion-item>                            
+                    </ion-list>
+                </ion-col>                    
+
+                <ion-col col-12 col-sm-9 col-md-6 col-lg-4 col-xl-3>
+                    <ion-list>
+                        <ion-item>
+                            <ion-label floating>CEP</ion-label>
+                            <ion-input type="text"></ion-input>
+                        </ion-item>                            
+                    </ion-list>
+                </ion-col>       
+            </ion-row>
+        </ion-grid>
+
+
+        <ion-grid>
+            <ion-row>
+                <ion-col col-12 col-sm-9 col-md-6 col-lg-4 col-xl-3>
+                    <ion-list>
+                        <ion-item>
+                            <ion-label floating>País</ion-label>
+                            <ion-input type="text"></ion-input>
+                        </ion-item>                     
+                    </ion-list>
+                </ion-col>
+
+                <ion-col col-12 col-sm-9 col-md-6 col-lg-4 col-xl-3>
+                    <ion-list>
+                        <ion-item>
+                            <ion-label floating>Município</ion-label>
+                            <ion-input type="text"></ion-input>
+                        </ion-item>                            
+                    </ion-list>
+                </ion-col>  
+                
+                <ion-col col-12 col-sm-9 col-md-6 col-lg-4 col-xl-3>
+                    <ion-list>
+                        <ion-item>
+                            <ion-label floating>Estado</ion-label>
+                            <ion-input type="text"></ion-input>
+                        </ion-item>                            
+                    </ion-list>
+                </ion-col>                    
+
+                <ion-col col-12 col-sm-9 col-md-6 col-lg-4 col-xl-3>
+                    <ion-list>
+                        <ion-item>
+                            <ion-label floating>email</ion-label>
+                            <ion-input type="text"></ion-input>
+                        </ion-item>                            
+                    </ion-list>
+                </ion-col>                       
+            </ion-row>
+        </ion-grid>        
+
+
+        <ion-grid>
+            <ion-row>
+                <ion-col col-12 col-sm-9 col-md-6 col-lg-4 col-xl-3>
+                    <ion-list>
+                        <ion-item>
+                            <ion-label floating>Telefone</ion-label>
+                            <ion-input type="text"></ion-input>
+                        </ion-item>                            
+                    </ion-list>
+                </ion-col>
+
+                <ion-col col-12 col-sm-9 col-md-6 col-lg-4 col-xl-3>
+                    <ion-list>
+                        <ion-item>
+                            <ion-label floating>Celular</ion-label>
+                            <ion-input type="text"></ion-input>
+                        </ion-item>                            
+                    </ion-list>
+                </ion-col>  
+                
+                <ion-col col-12 col-sm-9 col-md-6 col-lg-4 col-xl-3>
+                    <ion-list>
+                        <ion-item>
+                            <ion-label floating>Observação</ion-label>
+                            <ion-input type="text"></ion-input>
+                        </ion-item>                            
+                    </ion-list>
+                </ion-col>
+                
+                <ion-col col-12 col-sm-9 col-md-6 col-lg-4 col-xl-3>
+                    <ion-list>
+                        <ion-item>
+                            <ion-label>Produto</ion-label>
+                            <ion-select [(ngModel)]="Produto">
+                            <ion-option value="LES SAM">LES SAM</ion-option>
+                            <ion-option value="LES HOST">LES HOST</ion-option>
+                            <ion-option value="LES SOFTWARE">LES SOFTWARE</ion-option>
+                            </ion-select>
+                        </ion-item>
+                    </ion-list>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+        
+
+        <ion-grid>
+            <ion-row>
+                <ion-col col-12 col-sm-9 col-md-6 col-lg-4 col-xl-3>
+                    <ion-list>
+                        <ion-item>
+                            <ion-label color="primary">Habilitar Edição</ion-label>
+                            <ion-toggle [(ngModel)]="editarUsuario" color="primary"></ion-toggle>
+                        </ion-item>             
+                    </ion-list>
+                </ion-col>    
+
+                <ion-col col-12 col-sm-9 col-md-6 col-lg-4 col-xl-3>
+                    <ion-list>
+                        <ion-item color="dark">
+                            <button ion-button block icon-left [disabled] = "!editarUsuario" color="secondary"><ion-icon name="checkmark-circle"></ion-icon>Salvar</button>  
+                        </ion-item>                        
+                    </ion-list>
+                </ion-col>
+
+                <ion-col col-12 col-sm-9 col-md-6 col-lg-4 col-xl-3>
+                    <ion-list>
+                        <ion-item color="dark">
+                            <button ion-button block icon-left [disabled] = "true" color="light"></button>  
+                        </ion-item>                            
+                    </ion-list>
+                </ion-col>  
+                
+                <ion-col col-12 col-sm-9 col-md-6 col-lg-4 col-xl-3>
+                    <ion-list>
+                        <ion-item color="dark">
+                            <button ion-button block icon-left [disabled] = "true" color="danger"></button>  
+                        </ion-item>                            
+                    </ion-list>
+                </ion-col>                           
+            </ion-row>
+        </ion-grid>   
+        
+    </ion-card>
+
+</ion-content>
